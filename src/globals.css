@@ -631,3 +631,19 @@ html, body, #root {
     word-break: keep-all;     
   }
 }
+@media (max-width: 600px) {
+  .exp-pro-section .exp-card h3 {
+    font-size: 1rem;    
+  }
+
+
+  .exp-pro-section .exp-card p {
+    font-size: 0.8rem;  
+  }
+
+  
+  .exp-pro-section .exp-date {
+    font-size: 0.75rem; 
+  }
+}
+
