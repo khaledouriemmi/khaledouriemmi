@@ -363,6 +363,16 @@ html, body, #root {
       gap: 4rem;
       padding: 0 2rem;
     }
+    .exp-card h3 {
+        font-size:clamp(0.875rem, 1vw, 1.125rem)
+        
+}
+    .exp-card p {
+        font-size:clamp(0.8rem, 1vw, 1rem) 
+    }
+    .exp-date {
+        font-size:clamp(0.8rem, 1vw, 0.9rem) 
+}
 }
 
 
