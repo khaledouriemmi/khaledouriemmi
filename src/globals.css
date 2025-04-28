@@ -3,8 +3,8 @@
     margin:0;
     box-sizing: border-box;
     padding: 0;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
 html, body, #root {
@@ -15,7 +15,7 @@ html, body, #root {
     font-family: 'Inter', sans-serif;
     color: #fff;
     background: #000;
-    overflow-y: auto;  /* Changed from hidden to auto */
+    overflow-y: auto;  
     overflow-x: hidden;
 }
 
@@ -492,7 +492,7 @@ html, body, #root {
     text-align: center;
 }
 
-/* Mobile optimization for contact section */
+
 @media (max-width: 768px) {
     #contact.contact-section {
         padding: 3rem 1rem;
@@ -550,11 +550,11 @@ html, body, #root {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -3;  /* Move video to the very back */
+  z-index: -3;  
   object-fit: cover;
 }
 
-/* White overlay between video and content */
+
 .App::before {
   content: '';
   position: fixed;
@@ -563,11 +563,11 @@ html, body, #root {
   width: 100%;
   height: 100%;
 
-  z-index: -2;  /* Place overlay above video but below content */
+  z-index: -2;  
   pointer-events: none;
 }
 
-/* Ensure all content stays above the overlay */
+
 .App {
   position: relative;
   z-index: 1;
@@ -577,7 +577,7 @@ html, body, #root {
   scroll-behavior: smooth;
 }
 
-/* Ensure all sections stay above the overlay */
+
 .hero,
 .exp-pro-section,
 .contact,
@@ -586,7 +586,7 @@ html, body, #root {
   z-index: 1;
 }
 
-/* Ensure cards and overlays within sections remain visible */
+
 .overlay,
 .exp-card,
 .proj-card {
@@ -605,5 +605,19 @@ html, body, #root {
       0   0  12px rgba(255,255,255,1.0),
       0   0  24px rgba(0,255,255,0.8),
       0   0  36px rgba(0,255,255,0.6);
+  }
+}
+@media (max-width: 600px) {
+  
+  #experience .exp-list .exp-card h3 {
+    font-size: 1rem;          
+    white-space: nowrap;      
+    overflow: hidden;
+    text-overflow: ellipsis;  
+  }
+  /* make the description smaller, too */
+  #experience .exp-list .exp-card p {
+    font-size: 0.8rem;         
+    word-break: keep-all;     
   }
 }
