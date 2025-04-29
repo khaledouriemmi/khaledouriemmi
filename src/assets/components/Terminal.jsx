@@ -34,7 +34,6 @@ You can now close this terminal with Ctrl+D, or press Enter to restart.`;
       if (hasTyped.current) return;
       hasTyped.current = true;
       let idx = 0;
-      const speed = 50;
       (function type() {
         if (idx < dynamicText.length) {
           typingEl.innerText += dynamicText.charAt(idx++);
@@ -156,11 +155,13 @@ You can now close this terminal with Ctrl+D, or press Enter to restart.`;
               font-size: 0.5em;
               margin-top: -55px;
               margin-left: -12px;
+              overflow-wrap: break-word;
           }
           .terminal {
-              width: 85%;
-              height: 150px;
+              width: 100%;
+              height: auto;
               min-height: 150px;
+              padding: 79px 10px 20px;
           }
         }
         @media screen and (max-width: 433px) {
@@ -174,6 +175,26 @@ You can now close this terminal with Ctrl+D, or press Enter to restart.`;
               height: 100px;
               min-height: 100px;
           }
+              @media screen and (max-width: 600px) {
+        .terminal-body {
+            font-size: 0.5em;
+            margin-top: -55px;
+            margin-left: -12px;
+            overflow-wrap: break-word;
+            line-height: 1.2; /* Added line height for better readability */
+        }
+        .terminal {
+            width: 95%;
+            height: 400px; /* Fixed height */
+            min-height: 400px;
+            padding: 79px 10px 20px;
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .typing-effect {
+            white-space: pre-wrap; /* Allow text to wrap */
+            line-height: 1.2;
+        }
+      }
         }
       `}</style>
     </section>
