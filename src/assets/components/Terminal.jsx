@@ -28,28 +28,31 @@ You can now close this terminal with Ctrl+D, or press Enter to restart.`;
 
   useEffect(() => {
     const typingEl = typingRef.current;
+    const speed = 50; // Define typing speed in milliseconds
     typingEl.innerText = staticText;
 
     const typeText = () => {
       if (hasTyped.current) return;
       hasTyped.current = true;
       let idx = 0;
-      (function type() {
+      const type = () => {
         if (idx < dynamicText.length) {
-          typingEl.innerText += dynamicText.charAt(idx++);
+          typingEl.innerText = staticText + dynamicText.slice(0, idx + 1);
+          idx++;
           setTimeout(type, speed);
         } else {
-          setTimeout(() => {
-            typingEl.innerText += finalStaticText;
-          }, 3000);
+          typingEl.innerText += finalStaticText;
         }
-      })();
+      };
+      type();
     };
 
     const termEl = terminalRef.current;
-    termEl.addEventListener('mouseover', typeText);
-    return () => termEl.removeEventListener('mouseover', typeText);
-  },);
+    if (termEl) {
+      termEl.addEventListener('mouseover', typeText);
+      return () => termEl.removeEventListener('mouseover', typeText);
+    }
+  }, [staticText, dynamicText, finalStaticText]);
 
   return (
     <section className="terminal-section" id="about-me">
