@@ -39,7 +39,7 @@ export default function HomeSection() {
           </h2>
           <p>
             Tunisian developer writing elegant solutions with imagination and rigor.
-            Currently studying Computer Science at the University of South Florida.
+            Currently studying Computer Science at Sorbonne Université.
             Always seeking contribution, internships and full time opportunities.
           </p>
           <a href="Mohamed Khaled Resume.pdf" className="btn-link">Download Resume</a>
