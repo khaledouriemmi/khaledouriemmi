@@ -13,7 +13,7 @@ export default function Terminal() {
 C:\\Users\\S4LB7>`;
   const dynamicText =
 `Who Is Khaled OURIEMMI? 
-Hello! I'm Khaled OURIEMMI, a passionate Computer Science student at the University of South Florida. I am From Tunisia 
+Hello! I'm Khaled OURIEMMI, a passionate Computer Science student at Sorbonne Université. I am From Tunisia 
 I have started my journey in programming at the age of 14 in 2021, and I have been in love with it ever since.
 I started with Scratch and then I moved to Python and C with SA-MP (San Andreas Multiplayer) scripting, I was Known As S4LB7.
 I have a strong interest in web apps development, and I am currently working with React.js and Node.js. and Not only that , 
