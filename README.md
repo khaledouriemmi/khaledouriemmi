@@ -1,6 +1,6 @@
 <br clear="both">
 
-<h2 align="left">Hi 👋, I'm Mohamed Khaled Ouriemmi<br><br>I am a Computer science student from Tunisia, committed to the University of South Florida📍USF — passionate about building tech that empowers underrepresented communities and proud to represent where I come from, wherever I go.</h2>
+<h2 align="left">Hi 👋, I'm Mohamed Khaled Ouriemmi<br><br>I am a Computer science student from Tunisia, committed to Sorbonne Université — passionate about building tech that empowers underrepresented communities and proud to represent where I come from, wherever I go.</h2>
 
 ###
 
