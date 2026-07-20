@@ -12,6 +12,8 @@ const copy = {
     intro: 'Tunisian developer studying Computer Science at Sorbonne University in Paris. I turn complex ideas into reliable web experiences, developer tools, and playful systems.',
     viewWork: 'Explore my work',
     resume: 'Download résumé',
+    resumeEnglish: 'English CV',
+    resumeFrench: 'French CV',
     based: 'Based in Paris, France',
     aboutKicker: 'A little about me',
     aboutTitle: 'Engineering mindset, global perspective.',
@@ -55,6 +57,8 @@ const copy = {
     intro: 'Développeur tunisien et étudiant en informatique à Sorbonne Université, à Paris. Je transforme des idées complexes en expériences web fiables, outils techniques et systèmes créatifs.',
     viewWork: 'Découvrir mes projets',
     resume: 'Télécharger mon CV',
+    resumeEnglish: 'CV anglais',
+    resumeFrench: 'CV français',
     based: 'Basé à Paris, France',
     aboutKicker: 'Quelques mots sur moi',
     aboutTitle: 'Rigueur technique, perspective internationale.',
@@ -135,7 +139,11 @@ export default function App() {
           <p className="heroIntro">{t.intro}</p>
           <div className="heroActions">
             <a className="button primary" href="#work">{t.viewWork}<ArrowDownRight size={18} /></a>
-            <a className="button secondary" href="/Khaled Resume.pdf" download>{t.resume}<Download size={17} /></a>
+            <div className="resumeDownloads" aria-label={t.resume}>
+              <span><Download size={17} />{t.resume}</span>
+              <a href="/Khaled_Ouriemmi_CV.pdf" download="Khaled_Ouriemmi_CV_EN.pdf">{t.resumeEnglish}</a>
+              <a href="/CV_Khaled_Ouriemmi_FR.pdf" download="Khaled_Ouriemmi_CV_FR.pdf">{t.resumeFrench}</a>
+            </div>
           </div>
           <div className="heroFoot">
             <span><MapPin size={16} />{t.based}</span>

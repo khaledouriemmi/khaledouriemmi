@@ -42,7 +42,7 @@ export default function HomeSection() {
             Currently studying Computer Science at Sorbonne Université.
             Always seeking contribution, internships and full time opportunities.
           </p>
-          <a href="Khaled Resume.pdf" className="btn-link">Download Resume</a>
+          <a href="/Khaled_Ouriemmi_CV.pdf" className="btn-link">Download Resume</a>
         </div>
         <div className="socials">
           <a href="https://github.com/khaledouriemmi">
