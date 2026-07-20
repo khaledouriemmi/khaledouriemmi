@@ -41,7 +41,8 @@ const copy = {
       ['BiblioManager', 'A complete library lending system for managing books, members, and borrowing workflows.', ['Python', 'Database', 'Desktop'], 'https://github.com/khaledouriemmi/BiblioManager', '06'],
     ],
     experiences: [
-      ['LFI Victor Hugo', 'Full-stack web developer', 'Mar 2024 — Jul 2025', 'Built and maintained web experiences with a focus on practical delivery and usability.'],
+      ['MelyaKids · Melya Conseils et Formations', 'Algorithms, Robotics & Applied Mathematics Instructor', 'Jul 2026 — Present', 'Teaching algorithms, robotics, and applied mathematics to children and teenagers through practical, engaging activities.'],
+      ['VH-News · LFI Victor Hugo', 'Founder & Lead Full-stack Web Developer', 'Mar 2024 — May 2025', 'Founded and led development of VH-News, the official school journal of Lycée Français International Victor Hugo in Djerba.'],
       ['Independent', 'Open-source developer', 'May 2023 — Present', 'Designing, shipping, and documenting public software projects across web and tooling.'],
       ['Independent', 'Multiplayer server developer', 'May 2023 — Present', 'Developing custom SA-MP and FiveM systems with C/Pawn and Lua.'],
     ],
@@ -83,7 +84,8 @@ const copy = {
       ['BiblioManager', 'Un système complet de gestion des prêts pour administrer livres, adhérents et emprunts.', ['Python', 'Base de données', 'Desktop'], 'https://github.com/khaledouriemmi/BiblioManager', '06'],
     ],
     experiences: [
-      ['LFI Victor Hugo', 'Développeur web full-stack', 'Mars 2024 — Juil. 2025', 'Conception et maintenance d’expériences web centrées sur la fiabilité et les usages concrets.'],
+      ['MelyaKids · Melya Conseils et Formations', 'Formateur en algorithmique, robotique et mathématiques appliquées', 'Juil. 2026 — Aujourd’hui', 'Formation d’enfants et d’adolescents à l’algorithmique, à la robotique et aux mathématiques appliquées à travers des activités pratiques et engageantes.'],
+      ['VH-News · LFI Victor Hugo', 'Fondateur et Lead Développeur Web Full Stack', 'Mars 2024 — Mai 2025', 'Création et direction du développement de VH-News, le journal officiel du Lycée Français International Victor Hugo de Djerba.'],
       ['Indépendant', 'Développeur open source', 'Mai 2023 — Aujourd’hui', 'Conception, livraison et documentation de projets publics orientés web et outils.'],
       ['Indépendant', 'Développeur de serveurs multijoueurs', 'Mai 2023 — Aujourd’hui', 'Développement de systèmes SA-MP et FiveM sur mesure en C/Pawn et Lua.'],
     ],
